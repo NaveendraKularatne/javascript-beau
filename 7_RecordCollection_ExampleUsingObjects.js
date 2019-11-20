@@ -32,7 +32,7 @@ function updateRecord(id, property, value) {
     } else {
         collection[id][property] = value;
     }
-    return collection;
+     return collection;
 }
 
 updateRecord(2468, "tracks", "TEST");
