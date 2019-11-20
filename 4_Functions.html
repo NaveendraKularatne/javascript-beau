@@ -1,0 +1,47 @@
+<script>
+function newFunction(){
+    console.log("This is a new function!");
+}
+newFunction();
+
+/*---------------Passing values----------------*/
+function ageName(age,name){
+    console.log("Your name is :" + name + "\nYour age is :" + age);
+}
+
+ageName(25, "Pete");
+
+/*-----------Checking Global/Local varriables-------------*/
+/*var myGlobal = 10;
+function fun1(){
+    oopsGlobal = 5;
+} 
+
+function fun2(){
+    var output = "";
+    if(typeOf(myGlobal) != "undefined"){
+        output += "MyGlobal :" + myGlobal;
+        console.log(output);
+    }
+    if(typeOf(oopsGlobal) != "undefined"){
+        output += "oops Global :" + oopsGlobal;
+        console.log(output);
+    }
+}
+    fun1();
+    fun2();/*
+
+/*---------Adding a value to the end of the array and removing 1st one and shifting the array-----------*/
+function nextInLine(arr, item){
+    arr.push(item);
+    return arr.shift();
+}
+
+var arrTest = [1,2,3,4,5];
+
+console.log("Before : " + JSON.stringify(arrTest));
+console.log(nextInLine(arrTest, 6));
+console.log("After : " + JSON.stringify(arrTest));
+
+
+</script>
